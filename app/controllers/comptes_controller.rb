@@ -5,6 +5,9 @@ class ComptesController < ApplicationController
   # GET /comptes.json
   def index
     @comptes = Compte.all
+    if current_user.sign_in_count==1
+      UserMailer.welcome_email(current_user).deliver_now
+    end
   end
 
   # GET /comptes/1
