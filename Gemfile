@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # For secure login and registration administartion
 gem'pry'
+gem 'jquery-datatables-rails', '~> 3.3.0'
 gem'better_errors'
 gem'mailcatcher'
 gem 'devise'
