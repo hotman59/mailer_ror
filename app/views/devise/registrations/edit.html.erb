@@ -12,6 +12,30 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
+
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.phone_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.phone_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.phone_field :city %>
+  </div>
+  <div class="field">
+      <%= f.label :citycode %><br />
+      <%= f.phone_field :citycode %>
+    </div>
+
+  <div class="field">
+      <%= f.label :subscribe %><br />
+      <%= f.subscribe_field :subscribe %>
+    </div>
+
   <div class="field">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "off" %>
@@ -26,6 +50,8 @@
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
+
+
 
   <div class="actions">
     <%= f.submit "Update" %>
