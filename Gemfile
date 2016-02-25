@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 # For secure login and registration administartion
+gem'pry'
+gem'better_errors'
+gem'mailcatcher'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'

@@ -10,8 +10,13 @@
     <%= f.email_field :email, autofocus: true %>
   </div>
   <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
+
+  <div class="field">
     <%= f.label :phone %><br />
-    <%= f.phone_field :email %>
+    <%= f.phone_field :phone %>
   </div>
 
   <div class="field">

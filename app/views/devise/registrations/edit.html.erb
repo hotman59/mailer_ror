@@ -7,7 +7,10 @@
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
-
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
@@ -15,25 +18,25 @@
 
   <div class="field">
     <%= f.label :phone %><br />
-    <%= f.phone_field :email %>
+    <%= f.phone_field :phone %>
   </div>
 
   <div class="field">
     <%= f.label :gender %><br />
-    <%= f.phone_field :gender %>
+    <%= f.check_box :gender %>
   </div>
   <div class="field">
     <%= f.label :city %><br />
-    <%= f.phone_field :city %>
+    <%= f.text_field :city %>
   </div>
   <div class="field">
       <%= f.label :citycode %><br />
-      <%= f.phone_field :citycode %>
+      <%= f.text_field :citycode %>
     </div>
 
   <div class="field">
       <%= f.label :subscribe %><br />
-      <%= f.subscribe_field :subscribe %>
+      <%= f.check_box :subscribe %>
     </div>
 
   <div class="field">

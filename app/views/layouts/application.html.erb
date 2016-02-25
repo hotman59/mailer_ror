@@ -15,7 +15,7 @@
 <%= link_to "S'inscrire", new_user_registration_path %>
 <%= link_to "Se connecter", new_user_session_path %>
 <% end %>
-
+<div class="message"><%= flash_messages %></div>
 <%= yield %>
 
 </body>
